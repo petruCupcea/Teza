@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup } from "@angular/forms";
+import { FormControl, FormGroup, Validators } from "@angular/forms";
+
 
 @Component({
   selector: 'login-form',
@@ -10,10 +11,16 @@ export class LoginFormComponent {
 
   loginForm: FormGroup;
 
+
   constructor() {
     this.loginForm = new FormGroup({
-      login: new FormControl(),
-      password: new FormControl(),
+      login: new FormControl('', [Validators.required, Validators.email]),
+      password: new FormControl('', [
+        Validators.required,
+        Validators.maxLength(24),
+        Validators.minLength(6)
+      ]),
+      rememberMe: new FormControl(''),
     })
   }
 
