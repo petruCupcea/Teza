@@ -1,0 +1,22 @@
+.login-wrapper {
+  padding: 32px;
+
+  .checkbox-container {
+    max-width: 300px;
+    min-width: 150px;
+    margin: auto;
+    display: flex;
+  }
+}
+
+mat-form-field {
+  display: block;
+  margin: auto;
+  max-width: 300px;
+  min-width: 150px;
+}
+
+button {
+  margin: 32px 0;
+  min-width: 150px;
+}
