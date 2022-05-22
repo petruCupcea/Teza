@@ -5,15 +5,15 @@
     <form [formGroup]="registerForm">
       <mat-form-field>
         <mat-label>Name</mat-label>
-        <input matInput>
+        <input matInput formControlName="name">
       </mat-form-field>
       <mat-form-field>
         <mat-label>Surname</mat-label>
-        <input matInput>
+        <input matInput formControlName="surname">
       </mat-form-field>
       <mat-form-field>
         <mat-label>Email</mat-label>
-        <input matInput>
+        <input matInput formControlName="surname">
       </mat-form-field>
       <mat-form-field>
         <mat-label>Password</mat-label>
@@ -21,10 +21,10 @@
       </mat-form-field>
       <mat-form-field>
         <mat-label>Repeat Password</mat-label>
-        <input matInput formControlName="password" type="password">
+        <input matInput formControlName="repeatPassword" type="password">
       </mat-form-field>
       <div class="checkbox-container">
-        <mat-checkbox>I accept terms and coditions.</mat-checkbox>
+        <mat-checkbox formControlName="terms">I accept terms and coditions.</mat-checkbox>
       </div>
       <button mat-raised-button type="submit" color="accent">Sign Up</button>
     </form>

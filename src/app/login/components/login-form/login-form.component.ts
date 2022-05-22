@@ -14,13 +14,13 @@ export class LoginFormComponent {
 
   constructor() {
     this.loginForm = new FormGroup({
-      login: new FormControl('', [Validators.required, Validators.email]),
-      password: new FormControl('', [
+      login: new FormControl(undefined, [Validators.required, Validators.email]),
+      password: new FormControl(undefined, [
         Validators.required,
         Validators.maxLength(24),
         Validators.minLength(6)
       ]),
-      rememberMe: new FormControl(''),
+      rememberMe: new FormControl(undefined),
     })
   }
 
