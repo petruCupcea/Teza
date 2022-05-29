@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LoginModule } from './login';
 import { MenuModule } from './menu/menu.module';
+import { ShareMarketModule } from './share-market';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { MenuModule } from './menu/menu.module';
     BrowserAnimationsModule,
     LoginModule,
     MenuModule,
+    ShareMarketModule,
     AppRoutingModule,
   ],
   providers: [],
