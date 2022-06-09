@@ -8,4 +8,9 @@
       <h3>SHOP ASOS DESIGN</h3>
     </div>
   </div>
+  <div class="items-container">
+    <ng-container *ngFor="let item of categoryList">
+      <category-card [categoryItem]="item"></category-card>
+    </ng-container>
+  </div>
 </div>

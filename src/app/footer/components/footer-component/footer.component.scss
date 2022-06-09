@@ -1,0 +1,20 @@
+ul {
+  list-style: none;
+  color: #666666;
+
+  h4 {
+    margin: 0;
+    font-weight: 700;
+  }
+
+  li:hover {
+    color: #0770cf;
+  }
+}
+
+.footer {
+  padding: 16px 64px;
+  background-color: #EEEEEE;
+  display: flex;
+  justify-content: space-around;
+}

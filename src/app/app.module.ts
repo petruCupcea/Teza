@@ -7,8 +7,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { LoginModule } from './login';
 import { MenuModule } from './menu';
 import { CartModule } from './cart';
-import { ReturnRefundsModule } from "./return-refunds";
-import { MenModule } from "./men";
+import { ReturnRefundsModule } from './return-refunds';
+import { MenModule } from './men';
+import { FooterModule } from './footer';
 
 
 @NgModule({
@@ -18,9 +19,10 @@ import { MenModule } from "./men";
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    CartModule,
+    FooterModule,
     LoginModule,
     MenuModule,
-    CartModule,
     MenModule,
     ReturnRefundsModule,
     AppRoutingModule,

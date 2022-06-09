@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { MenRoutingModule } from "./men-routing.module";
 
 import { MenPageComponent } from './pages'
+import { AppModule } from "../shared/shared.module";
+import { CommonModule } from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -9,6 +11,8 @@ import { MenPageComponent } from './pages'
   ],
   imports: [
     MenRoutingModule,
+    AppModule,
+    CommonModule,
   ],
   providers: [],
   bootstrap: []
