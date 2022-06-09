@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { FavoritePageComponent } from './pages';
+
+import { ReturnRefundsComponent } from './pages';
 
 
 const routes: Routes = [
-  {path: 'favorite-page', component: FavoritePageComponent}
+  {path: 'return-refunds', component: ReturnRefundsComponent}
 ];
 
 
@@ -12,5 +13,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class MenuRoutingModule {
+export class ReturnRefundsRoutingModule {
 }
