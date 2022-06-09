@@ -1,17 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { SharePageComponent } from './pages';
 
-
-const routes: Routes = [
-  {path: 'share', component: SharePageComponent}
-];
+const routes: Routes = [];
 
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class ShareMarketRoutingModule {
+export class WomenRoutingModule {
 }

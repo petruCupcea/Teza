@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { FormControl, FormGroup, Validators } from "@angular/forms";
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup, Validators } from "@angular/forms";
 
 
 @Component({
@@ -12,8 +12,8 @@ export class RegisterFormComponent {
   registerForm: FormGroup;
 
 
-  constructor() {
-    this.registerForm = new FormGroup({
+  constructor(formBuilder: FormBuilder) {
+    this.registerForm = formBuilder.group({
       name: new FormControl(undefined, [
         Validators.required,
         Validators.minLength(3),
@@ -26,5 +26,6 @@ export class RegisterFormComponent {
       terms: new FormControl(undefined, [Validators.required])
     })
   }
+
 
 }

@@ -1,0 +1,48 @@
+.title-image {
+  position: relative;
+  margin: auto;
+  max-width: 1258px;
+  max-height: 600px;
+
+  .absolute-card {
+    position: absolute;
+    padding: 16px 32px;
+    background-color: #ffffff;
+    margin-left: calc(50% - 158px);
+
+    &.heading {
+      bottom: 128px;
+      width: 316px;
+
+    }
+
+    &.button {
+      bottom: 48px;
+      padding: 8px 16px;
+      width: 186px;
+      margin-left: calc(50% - 93px);
+      transition: color 0.5s, background-color 0.5s;
+    }
+
+    &.button:hover {
+      background-color: #000000;
+      color: #ffffff;
+      transition: color 0.5s, background-color 0.5s;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 36px;
+      font-weight: 700;
+      font-family: "Futura";
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 700;
+      font-family: "Futura";
+    }
+  }
+
+}

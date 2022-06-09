@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { FavoritePageComponent } from './pages';
+import { CartPageComponent } from './pages';
 
 
 const routes: Routes = [
-  {path: 'favorite-page', component: FavoritePageComponent}
+  {path: 'cart-page', component: CartPageComponent}
 ];
 
 
@@ -12,5 +12,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class MenuRoutingModule {
+export class CartRoutingModule {
 }

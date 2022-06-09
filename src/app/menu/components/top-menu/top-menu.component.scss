@@ -3,4 +3,16 @@ mat-toolbar {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  padding-left: 132px;
+  padding-right: 132px;
+
+  .nav-content-left {
+    display: flex;
+    align-items: center;
+
+    img {
+      filter: invert(1);
+      margin-right: 32px;
+    }
+  }
 }

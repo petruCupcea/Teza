@@ -5,8 +5,10 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LoginModule } from './login';
-import { MenuModule } from './menu/menu.module';
-import { ShareMarketModule } from './share-market';
+import { MenuModule } from './menu';
+import { CartModule } from './cart';
+import { ReturnRefundsModule } from "./return-refunds";
+import { MenModule } from "./men";
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { ShareMarketModule } from './share-market';
     BrowserAnimationsModule,
     LoginModule,
     MenuModule,
-    ShareMarketModule,
+    CartModule,
+    MenModule,
+    ReturnRefundsModule,
     AppRoutingModule,
   ],
   providers: [],
