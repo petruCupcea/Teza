@@ -1,10 +1,23 @@
-.no-items-card {
-  margin: 100px auto;
-  width: 320px;
-  text-align: center;
+.items-container {
 
-  .icon {
-    margin-left: 105px;
+  .cart-items {
+    max-width: 600px;
+    flex-grow: 2;
+    .cart-items-header {
+      margin-bottom: 8px;
+      width: 100%;
+      text-align: left;
+    }
+
+    .cart-footer {
+      width: 100%;
+    }
+  }
+
+  .total-container {
+    margin-left: 64px;
+    min-width: 200px;
+    max-width: 300px;
+    flex-grow: 1;
   }
 }
-

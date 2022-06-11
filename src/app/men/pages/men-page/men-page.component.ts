@@ -31,4 +31,19 @@ export class MenPageComponent {
     },
   ]
 
+  brandList = [
+    {
+      brandName: 'TOPMAN',
+      caption: 'Top-tier threads',
+      src: '../../../../assets/images/category/topman_brand.avif',
+    }
+  ]
+
+  asosList = [
+    {
+      title: 'THE ASOS CIRCULAR DESIGN COLLECTION',
+      src: '../../../../assets/images/category/asos_design.avif',
+    }
+  ]
+
 }

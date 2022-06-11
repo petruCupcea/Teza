@@ -1,4 +1,5 @@
-<div class="body-wrapper">
+<div class="body-wrapper banner">
+  <sales-banner></sales-banner>
   <div class="title-image">
     <img src="../../../../assets/images/title/title_image_1258x600.avif">
     <div class="absolute-card heading">
@@ -8,9 +9,18 @@
       <h3>SHOP ASOS DESIGN</h3>
     </div>
   </div>
-  <div class="items-container">
+  <div class="items-container center">
     <ng-container *ngFor="let item of categoryList">
       <category-card [categoryItem]="item"></category-card>
     </ng-container>
   </div>
+  <div class="items-container center">
+    <ng-container *ngFor="let item of brandList">
+      <brand-card [brandItem]="item"></brand-card>
+    </ng-container>
+    <ng-container *ngFor="let item of asosList">
+      <asos-card [cardItem]="item"></asos-card>
+    </ng-container>
+  </div>
+  <trending-brands></trending-brands>
 </div>

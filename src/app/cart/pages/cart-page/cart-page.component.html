@@ -1,18 +1,28 @@
 <div class="body-wrapper">
-  <mat-card class="no-items-card mat-elevation-z24">
-    <mat-card-header>
-      <button mat-icon-button class="icon">
-        <mat-icon>shopping_bag</mat-icon>
-      </button>
-    </mat-card-header>
-    <mat-card-content>
-      <h3><b>Your bag is empty</b></h3>
-      <p>Items remain in your bag for 60 minutes, and then they’re moved to your Saved Items.</p>
-      <p>Sign in to see your bag and get shopping!</p>
-      <button mat-raised-button color="accent" routerLink="../login">Sign In</button>
-    </mat-card-content>
-    <mat-card-footer>
-    </mat-card-footer>
-  </mat-card>
+<!--  <no-items-card></no-items-card>-->
+
+  <div class="items-container center">
+    <div class="cart-items">
+      <mat-card class="cart-items-header mat-elevation-z24">
+        <mat-card-title><h2>MY BAG</h2></mat-card-title>
+      </mat-card>
+      <ng-container>
+        <cart-item></cart-item>
+      </ng-container>
+      <mat-card class="cart-footer mat-elevation-z24">
+        <mat-card-title>
+          <mat-icon class="shipping-icon">local_shipping</mat-icon>
+          <h2>FREE* STANDARD DELIVERY</h2>
+        </mat-card-title>
+        <mat-card-subtitle>
+          <p>Faster delivery options available to most countries.</p>
+          <a>More info</a>
+        </mat-card-subtitle>
+      </mat-card>
+    </div>
+    <div class="total-container">
+      <h2>TOTAL</h2>
+    </div>
+  </div>
 
 </div>

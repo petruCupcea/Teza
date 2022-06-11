@@ -1,0 +1,21 @@
+mat-card {
+  margin: 4px 16px;
+  min-width: 240px;
+  max-width: 360px;
+  font-weight: 700;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  button {
+    margin: 8px auto 16px;
+  }
+
+  h2 {
+    margin: 0;
+    text-wrap: normal;
+    padding: 0 16px;
+  }
+}

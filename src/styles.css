@@ -10,9 +10,17 @@ body { margin: 0; font-family: "Futura", sans-serif; }
   min-height: 100%;
 }
 
+.body-wrapper.banner {
+  padding-top: 300px;
+}
+
 .items-container {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 32px;
+}
+
+.items-container.center {
+  justify-content: center;
 }
