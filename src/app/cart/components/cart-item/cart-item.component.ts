@@ -39,7 +39,6 @@ export class CartItemComponent {
 
 
   deleteItem() {
-    // this.http.delete('api/cart-items/' + this.cartItem.id);
   }
 
 }

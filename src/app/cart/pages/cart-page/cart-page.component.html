@@ -9,7 +9,7 @@
         <mat-card-title><h2>MY BAG</h2></mat-card-title>
       </mat-card>
       <ng-container *ngFor="let item of cartList">
-        <cart-item [cartItem]="item"></cart-item>
+        <cart-item [cartItem]="item" (click)="setSubTotal()"></cart-item>
       </ng-container>
       <mat-card class="cart-footer mat-elevation-z24">
         <mat-card-title>
