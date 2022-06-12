@@ -1,13 +1,15 @@
 <div class="body-wrapper">
-<!--  <no-items-card></no-items-card>-->
+  <mat-spinner *ngIf="requestInProgress"></mat-spinner>
 
-  <div class="items-container center">
+  <no-items-card *ngIf="!requestInProgress && cartList === undefined"></no-items-card>
+
+  <div *ngIf="!requestInProgress && cartList?.length > 0" class="items-container center">
     <div class="cart-items">
       <mat-card class="cart-items-header mat-elevation-z24">
         <mat-card-title><h2>MY BAG</h2></mat-card-title>
       </mat-card>
-      <ng-container>
-        <cart-item></cart-item>
+      <ng-container *ngFor="let item of cartList">
+        <cart-item [cartItem]="item"></cart-item>
       </ng-container>
       <mat-card class="cart-footer mat-elevation-z24">
         <mat-card-title>
@@ -21,7 +23,23 @@
       </mat-card>
     </div>
     <div class="total-container">
-      <h2>TOTAL</h2>
+      <mat-card>
+        <mat-card-title>
+          <h2>TOTAL</h2>
+        </mat-card-title>
+        <mat-card-content>
+          <p>Sub-total: {{totalPrice}}$</p>
+          <p>Delivery</p>
+          <mat-icon>info</mat-icon>
+          <mat-select>
+            <mat-option [value]="false">Free Delivery</mat-option>
+            <mat-option [value]="true">Fast Delivery (+23$)</mat-option>
+          </mat-select>
+        </mat-card-content>
+        <mat-card-footer class="total-footer">
+          <button mat-raised-button color="accent">CHECKOUT</button>
+        </mat-card-footer>
+      </mat-card>
     </div>
   </div>
 

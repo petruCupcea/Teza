@@ -72,9 +72,11 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
+              "proxyConfig": "proxy.conf.json",
               "browserTarget": "TezaDeAn:build:production"
             },
             "development": {
+              "proxyConfig": "proxy.conf.json",
               "browserTarget": "TezaDeAn:build:development"
             }
           },

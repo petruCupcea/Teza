@@ -10,6 +10,7 @@ import { CartModule } from './cart';
 import { ReturnRefundsModule } from './return-refunds';
 import { MenModule } from './men';
 import { FooterModule } from './footer';
+import { HttpClientModule } from "@angular/common/http";
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { FooterModule } from './footer';
     MenuModule,
     MenModule,
     ReturnRefundsModule,
+    HttpClientModule,
     AppRoutingModule,
   ],
   providers: [],

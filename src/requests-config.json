@@ -1,7 +1,0 @@
-{
-  "get-cart-items": {
-    "path": "/api-mocks/cart-items/cart-items.json",
-    "status": "",
-    "payload": ""
-  }
-}

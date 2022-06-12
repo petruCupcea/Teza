@@ -1,9 +1,23 @@
 <mat-card class="example-card mat-elevation-z24">
   <mat-card-title-group>
-    <mat-card-title>Shiba Inu</mat-card-title>
-    <mat-card-subtitle>Small</mat-card-subtitle>
-    <img mat-card-sm-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" >
+    <mat-card-title>{{cartItem?.name}}</mat-card-title>
+    <mat-card-subtitle>{{cartItem?.description}}</mat-card-subtitle>
+    <img mat-card-sm-image [src]="cartItem?.imageUrl">
   </mat-card-title-group>
   <mat-card-content>
+    <div class="items-container">
+      <p>Price: {{cartItem?.price.toFixed(2)}}$</p>
+      <p>Qty: {{cartItem?.quantity}}</p>
+      <p>Size: {{cartItem?.size}}</p>
+      <button mat-icon-button>
+        <mat-icon (click)="addItem()">add</mat-icon>
+      </button>
+      <button mat-icon-button>
+        <mat-icon (click)="removeItem()">remove</mat-icon>
+      </button>
+      <button mat-icon-button>
+        <mat-icon>delete_outline</mat-icon>
+      </button>
+    </div>
   </mat-card-content>
 </mat-card>

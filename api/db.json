@@ -1,0 +1,49 @@
+{
+  "cart-items": [
+    {
+      "id": "1",
+      "name": "NEW DESIGN",
+      "description": "oversized t-shirt with Rolling Stones print in white",
+      "price": 32.45,
+      "imageUrl": "https://images.asos-media.com/products/asos-design-oversized-t-shirt-with-rolling-stones-print-in-white/202722155-1-white",
+      "quantity": 1,
+      "size": "XL"
+    },
+    {
+      "id": "2",
+      "name": "NEW DESIGN",
+      "description": "oversized t-shirt in beige with collegiate front & back puff print",
+      "price": 24.99,
+      "imageUrl": "https://images.asos-media.com/products/asos-design-oversized-t-shirt-in-beige-with-collegiate-front-back-puff-print/202883477-1-smokegrey",
+      "quantity": 1,
+      "size": "L"
+    },
+    {
+      "id": "3",
+      "name": "Dr Marteens",
+      "description": "vegan 1460 8-eye boots in black",
+      "price": 148.00,
+      "imageUrl": "https://images.asos-media.com/products/dr-martens-vegan-1460-8-eye-boots-in-black/9038987-1-black",
+      "quantity": 1,
+      "size": "42"
+    },
+    {
+      "id": "4",
+      "name": "Vans Old Skool",
+      "description": "Gumsole trainers in black/white",
+      "price": 75.90,
+      "imageUrl": "https://images.asos-media.com/products/vans-old-skool-gumsole-trainers-in-black-white/202637694-1-black",
+      "quantity": 1,
+      "size": "42.5"
+    },
+    {
+      "id": "5",
+      "name": "Vans Old Skool",
+      "description": "Trainers in blue",
+      "price": 81.60,
+      "imageUrl": "https://images.asos-media.com/products/vans-old-skool-trainers-in-blue/13222824-1-blue",
+      "quantity": 1,
+      "size": "42.5"
+    }
+  ]
+}

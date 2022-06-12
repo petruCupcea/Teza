@@ -1,18 +1,16 @@
 import { AfterViewInit, Directive, OnDestroy } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
 
-import { PerfLogManager } from 'common/perf-logger';
 
 
 @Directive()
 export class BaseComponent implements AfterViewInit, OnDestroy {
 
-  private readonly _onDestroy: Subject<any>;
+  private readonly _onDestroy: Subject<void>;
 
 
   constructor() {
     this._onDestroy = new Subject<any>();
-    PerfLogManager.logPerfInit(this.constructor.name + '.ViewInit');
   }
 
 
@@ -22,7 +20,6 @@ export class BaseComponent implements AfterViewInit, OnDestroy {
 
 
   ngAfterViewInit() {
-    PerfLogManager.logPerfEnd(this.constructor.name + '.ViewInit', true);
   }
 
 
