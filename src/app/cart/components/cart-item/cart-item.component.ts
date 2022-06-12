@@ -17,18 +17,29 @@ export class CartItemComponent {
 
 
   addItem() {
-     this.cartItem.quantity += 1;
      this.cartItem.price += (this.cartItem.price/this.cartItem.quantity);
+    this.cartItem.quantity += 1;
+
+     this.http.patch('api/cart-items/'+ this.cartItem.id, {
+       quantity: this.cartItem.quantity,
+       price: this.cartItem.price,
+     })
   }
 
 
   removeItem() {
-    this.cartItem.quantity -= 1;
-    this.cartItem.price -= (this.cartItem.price/this.cartItem.quantity);
+    if (this.cartItem.quantity > 1) {
+      this.cartItem.price -= (this.cartItem.price/this.cartItem.quantity);
+      this.cartItem.quantity -= 1;
+
+      return;
+    }
+    this.deleteItem();
   }
 
 
   deleteItem() {
+    // this.http.delete('api/cart-items/' + this.cartItem.id);
   }
 
 }
