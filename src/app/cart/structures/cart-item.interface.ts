@@ -6,6 +6,6 @@ export interface CartItemInterface {
   price: string;
   imageUrl: string;
   quantity: string;
-  size?: string;
+  size: string;
 
 }
