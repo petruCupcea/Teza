@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CartItemInterface } from "../../structures/cart-item.interface";
 import { HttpClient } from '@angular/common/http';
 
@@ -10,9 +10,11 @@ import { HttpClient } from '@angular/common/http';
 export class CartItemComponent {
 
   @Input() cartItem: CartItemInterface;
+  @Output() deleteEvent: EventEmitter<string>;
 
 
   constructor(private readonly http: HttpClient) {
+    this.deleteEvent = new EventEmitter<string>()
   }
 
 
@@ -39,6 +41,7 @@ export class CartItemComponent {
 
 
   deleteItem() {
+    this.deleteEvent.emit(this.cartItem.id);
   }
 
 }

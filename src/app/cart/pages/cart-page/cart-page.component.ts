@@ -5,6 +5,7 @@ import { takeUntil } from 'rxjs/operators';
 import { CartItemInterface } from "../../structures/cart-item.interface";
 import { BaseComponent } from "../../../../../common/core/classes";
 
+
 @Component({
   selector: 'cart-page',
   templateUrl: './cart-page.component.html',
@@ -15,6 +16,7 @@ export class CartPageComponent extends BaseComponent implements OnInit {
   cartList: Array<CartItemInterface>;
   requestInProgress: boolean;
   totalPrice: string;
+
 
   constructor(private readonly http: HttpClient) {
     super();
@@ -37,6 +39,16 @@ export class CartPageComponent extends BaseComponent implements OnInit {
     })
 
     this.totalPrice = price.toFixed(2);
+  }
+
+
+  deleteItemById(id: string) {
+    this.cartList.forEach((item,index) => {
+      if (id === item.id) {
+        this.cartList.splice(index, 1);
+        this.setSubTotal();
+      }
+    })
   }
 
 

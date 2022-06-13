@@ -1,15 +1,20 @@
 <div class="body-wrapper">
   <mat-spinner *ngIf="requestInProgress"></mat-spinner>
 
-  <no-items-card *ngIf="!requestInProgress && cartList === undefined"></no-items-card>
+  <no-items-card *ngIf="!requestInProgress && (cartList.length === 0 || cartList === undefined)"></no-items-card>
 
   <div *ngIf="!requestInProgress && cartList?.length > 0" class="items-container center">
+
     <div class="cart-items">
       <mat-card class="cart-items-header mat-elevation-z24">
         <mat-card-title><h2>MY BAG</h2></mat-card-title>
       </mat-card>
       <ng-container *ngFor="let item of cartList">
-        <cart-item [cartItem]="item" (click)="setSubTotal()"></cart-item>
+        <cart-item
+          [cartItem]="item"
+          (click)="setSubTotal()"
+          (deleteEvent)="deleteItemById($event)">
+        </cart-item>
       </ng-container>
       <mat-card class="cart-footer mat-elevation-z24">
         <mat-card-title>
@@ -22,6 +27,7 @@
         </mat-card-subtitle>
       </mat-card>
     </div>
+
     <div class="total-container">
       <mat-card>
         <mat-card-title>
@@ -41,6 +47,7 @@
         </mat-card-footer>
       </mat-card>
     </div>
+
   </div>
 
 </div>
