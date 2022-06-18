@@ -4,6 +4,7 @@ import { takeUntil } from 'rxjs/operators';
 
 import { CartItemInterface } from "../../structures/cart-item.interface";
 import { BaseComponent } from "../../../../../common/core/classes";
+import { ActivatedRoute, Router } from "@angular/router";
 
 
 @Component({
@@ -18,7 +19,11 @@ export class CartPageComponent extends BaseComponent implements OnInit {
   totalPrice: string;
 
 
-  constructor(private readonly http: HttpClient) {
+  constructor(
+    private readonly http: HttpClient,
+    private readonly route: ActivatedRoute,
+    private readonly router: Router,
+  ) {
     super();
     this.requestInProgress = false;
     this.cartList = undefined;
@@ -49,6 +54,11 @@ export class CartPageComponent extends BaseComponent implements OnInit {
         this.setSubTotal();
       }
     })
+  }
+
+
+  sendToCheckout() {
+    this.router.navigate(['../checkout'], {queryParams: {total: this.totalPrice}})
   }
 
 

@@ -4,7 +4,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 
-import { CartPageComponent } from './pages';
+import { CartPageComponent, CheckoutPageComponent } from './pages';
 import { CartItemComponent, NoItemsCard } from './components';
 import { MatGridListModule } from "@angular/material/grid-list";
 import { CommonModule } from "@angular/common";
@@ -16,6 +16,7 @@ import { MatSelectModule } from "@angular/material/select";
   declarations: [
     CartPageComponent,
     CartItemComponent,
+    CheckoutPageComponent,
     NoItemsCard,
   ],
   imports: [
