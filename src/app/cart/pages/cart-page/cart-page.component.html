@@ -1,5 +1,5 @@
 <div class="body-wrapper">
-  <mat-spinner *ngIf="requestInProgress"></mat-spinner>
+  <mat-spinner *ngIf="requestInProgress" color="accent"></mat-spinner>
 
   <no-items-card *ngIf="!requestInProgress && (cartList.length === 0 || cartList === undefined)"></no-items-card>
 

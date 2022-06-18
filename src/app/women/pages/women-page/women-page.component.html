@@ -1,9 +1,9 @@
 <div class="body-wrapper banner">
-  <sales-banner (click)="goToShopList('The Summer Starter Pack')"></sales-banner>
-  <div class="title-image" (click)="goToShopList('The Summer Juice')">
-    <img src="../../../../assets/images/title/title_image_1258x600.avif">
+  <sales-banner></sales-banner>
+  <div class="title-image" (click)="goToShopList('Festi-gal')">
+    <img src="../../../../assets/images/title/title-women.avif">
     <div class="absolute-card heading">
-      <h1>Summer Juice</h1>
+      <h1>Festi-gal</h1>
     </div>
     <div class="absolute-card button">
       <h3>SHOP ASOS DESIGN</h3>
@@ -18,13 +18,9 @@
     </ng-container>
   </div>
 
-  <div *ngIf="brandList && circularList && !requestInProgress" class="items-container center">
+  <div *ngIf="brandList && !requestInProgress" class="items-container center">
     <ng-container *ngFor="let item of brandList">
       <brand-card [brandItem]="item" (click)="goToShopList(item?.brandName)"></brand-card>
-    </ng-container>
-
-    <ng-container *ngFor="let item of circularList">
-      <asos-card [cardItem]="item" (click)="goToShopList(item?.title)"></asos-card>
     </ng-container>
   </div>
 

@@ -6,17 +6,16 @@ import { Router } from "@angular/router";
 
 
 @Component({
-  selector: 'men-page',
-  templateUrl: './men-page.component.html',
-  styleUrls: ['./men-page.component.scss']
+  selector: 'women-page',
+  templateUrl: './women-page.component.html',
+  styleUrls: ['./women-page.component.scss']
 })
-export class MenPageComponent extends BaseComponent implements OnInit {
+export class WomenPageComponent extends BaseComponent implements OnInit {
 
   requestInProgress: boolean;
   requestsDone: Array<boolean> | undefined;
   categoryList: Array<{name: string, caption: string, src: string}> | undefined;
   brandList: Array<{brandName: string, caption: string, src: string}> | undefined;
-  circularList: Array<{title: string, src: string}>;
 
 
   constructor(
@@ -32,25 +31,24 @@ export class MenPageComponent extends BaseComponent implements OnInit {
   ngOnInit() {
     this.setCategoryList();
     this.setBrandList();
-    this.setCircularList();
   }
 
 
   goToShopList(title: string) {
-    this.router.navigate(['../shop-list'], {queryParams:{title: title}})
+    this.router.navigate(['../shop-list'], {queryParams: {title: title}})
   }
 
 
   private allRequestsDone(value: boolean) {
     this.requestsDone.push(value);
-    if (this.requestsDone[1] && this.requestsDone[2] && this.requestsDone[3]) {
+    if (this.requestsDone[1] && this.requestsDone[2]) {
       this.requestInProgress = false;
     }
   }
 
 
   private setCategoryList() {
-    this.http.get('api/categoryList').pipe(takeUntil(this.onDestroy)).subscribe((value: any) => {
+    this.http.get('api/categoryListWomen').pipe(takeUntil(this.onDestroy)).subscribe((value: any) => {
       this.categoryList = value;
       this.allRequestsDone(true);
     });
@@ -58,16 +56,8 @@ export class MenPageComponent extends BaseComponent implements OnInit {
 
 
   private setBrandList() {
-    this.http.get('api/brandList').pipe(takeUntil(this.onDestroy)).subscribe((value: any) => {
+    this.http.get('api/brandListWomen').pipe(takeUntil(this.onDestroy)).subscribe((value: any) => {
       this.brandList = value;
-      this.allRequestsDone(true);
-    });
-  }
-
-
-  private setCircularList() {
-    this.http.get('api/circularList').pipe(takeUntil(this.onDestroy)).subscribe((value: any) => {
-      this.circularList = value;
       this.allRequestsDone(true);
     });
   }

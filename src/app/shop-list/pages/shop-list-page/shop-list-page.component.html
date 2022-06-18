@@ -1,0 +1,8 @@
+<div class="body-wrapper">
+  <h2>{{pageTitle}}</h2>
+  <div class="items-container center">
+    <ng-container *ngFor="let item of productList">
+      <product-item [productItem]="item"></product-item>
+    </ng-container>
+  </div>
+</div>

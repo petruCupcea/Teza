@@ -3,7 +3,7 @@ export const environment = {
   perfErrorsToConsole: true,
   perfLogErrorsFromRequest: false,
   preloadAllModules: true,
-  apiBaseUrl: 'http://localhost:5000',
+  apiBaseUrl: 'http://localhost:3000',
   appName: 'ASOS',
   demo: false,
 };

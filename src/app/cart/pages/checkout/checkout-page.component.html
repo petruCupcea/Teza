@@ -1,10 +1,12 @@
 <div class="body-wrapper">
   <mat-card>
+    <mat-card-title>Is that right?</mat-card-title>
     <mat-card-content>
-      <ng-container>
-        <p></p>
+      <ng-container *ngFor="let item of checkoutItems">
+        <p>{{item?.quantity}} x {{item?.name}} {{item?.description}}</p>
       </ng-container>
       <p><b>Total: {{totalPrice}}</b></p>
     </mat-card-content>
+    <mat-card-footer><button mat-raised-button>Pay</button></mat-card-footer>
   </mat-card>
 </div>
