@@ -10,4 +10,8 @@ export class ProductItemComponent {
 
   @Input() productItem: any;
 
+  setFavorite() {
+    this.productItem.favorite = !this.productItem?.favorite;
+  }
+
 }

@@ -11,6 +11,7 @@ import {
 } from './components';
 import { MatButtonModule } from "@angular/material/button";
 import { CommonModule } from "@angular/common";
+import { SearchByPipe } from "./pipes";
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { CommonModule } from "@angular/common";
     CategoryCardComponent,
     SalesBannerComponent,
     TrendingBrandsComponent,
+    SearchByPipe,
   ],
   imports: [
     MatCardModule,
@@ -33,6 +35,7 @@ import { CommonModule } from "@angular/common";
     CategoryCardComponent,
     SalesBannerComponent,
     TrendingBrandsComponent,
+    SearchByPipe,
   ],
   providers: [],
 })

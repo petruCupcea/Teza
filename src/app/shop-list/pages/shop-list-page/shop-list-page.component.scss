@@ -2,7 +2,37 @@ h2 {
   font-weight: 700;
 }
 
+mat-form-field {
+  background-color: #424242;
+  padding: 16px;
+  border-radius: 4px;
+
+  input {
+    color: white;
+    font-weight: 700;
+  }
+}
+
+mat-spinner {
+  margin: auto;
+}
+
 .items-container {
   row-gap: 32px;
   column-gap: 32px;
+}
+
+.white-button {
+  background-color: blanchedalmond;
+  border: 3px solid black;
+  color: black;
+  padding: 8px 16px;
+  margin: 16px auto 32px;
+  border-radius: 32px;
+  min-width: 300px;
+  width: 50%;
+
+  h2 {
+    margin: 0;
+  }
 }

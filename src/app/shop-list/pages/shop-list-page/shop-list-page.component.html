@@ -1,7 +1,21 @@
 <div class="body-wrapper">
-  <h2>{{pageTitle}}</h2>
+  <div class="white-button mat-elevation-z8"><h2>{{pageTitle}}</h2></div>
   <div class="items-container center">
-    <ng-container *ngFor="let item of productList">
+    <mat-form-field [formGroup]="formGroup">
+      <input matInput placeholder="Search" formControlName="search">
+    </mat-form-field>
+    <mat-card>
+      <mat-card-content>
+        <button mat-button color="accent">Sort A-Z</button>
+        <button mat-button color="accent">Sort Z-A</button>
+        <button mat-button color="accent">Price low-high</button>
+        <button mat-button color="accent">Price high-low</button>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <mat-spinner *ngIf="requestInProgress"></mat-spinner>
+  <div *ngIf="!requestInProgress" class="items-container center">
+    <ng-container *ngFor="let item of productList | searchBy: searchValue: ['name', 'description'] ">
       <product-item [productItem]="item"></product-item>
     </ng-container>
   </div>

@@ -4,16 +4,22 @@
     <h3>{{productItem?.name}}</h3>
     <div class="items-container">
       <p>{{productItem?.description}}</p>
-      <p>{{productItem?.price}}</p>
+      <p>{{productItem?.price.toFixed(2)}}$</p>
     </div>
   </mat-card-content>
   <mat-card-footer>
     <div class="items-container">
       <button mat-raised-button>Add to cart</button>
       <div>
-        <mat-icon *ngIf="!productItem?.favorite">favorite_border</mat-icon>
-        <mat-icon *ngIf="productItem?.favorite">favorite</mat-icon>
-        <mat-icon>ios_share</mat-icon>
+        <button mat-icon-button *ngIf="!productItem?.favorite" (click)="setFavorite()">
+          <mat-icon>favorite_border</mat-icon>
+        </button>
+        <button mat-icon-button *ngIf="productItem?.favorite" (click)="setFavorite()">
+          <mat-icon>favorite</mat-icon>
+        </button>
+        <button mat-icon-button>
+          <mat-icon>telegram</mat-icon>
+        </button>
       </div>
     </div>
   </mat-card-footer>
