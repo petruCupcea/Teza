@@ -22,7 +22,7 @@ export class CartItemComponent {
      this.cartItem.price += (this.cartItem.price/this.cartItem.quantity);
     this.cartItem.quantity += 1;
 
-     this.http.patch('api/cart-items/'+ this.cartItem.id, {
+     this.http.patch('http://localhost:3000/cart-items/'+ this.cartItem.id, {
        quantity: this.cartItem.quantity,
        price: this.cartItem.price,
      })

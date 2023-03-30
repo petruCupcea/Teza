@@ -1,0 +1,240 @@
+{
+  "cartItems": [
+    {
+      "id": "1",
+      "name": "NEW DESIGN",
+      "description": "oversized t-shirt with Rolling Stones print in white",
+      "price": 32.45,
+      "imageUrl": "https://images.asos-media.com/products/asos-design-oversized-t-shirt-with-rolling-stones-print-in-white/202722155-1-white",
+      "quantity": 1,
+      "size": "XL"
+    },
+    {
+      "id": "2",
+      "name": "NEW DESIGN",
+      "description": "oversized t-shirt in beige with collegiate front & back puff print",
+      "price": 24.99,
+      "imageUrl": "https://images.asos-media.com/products/asos-design-oversized-t-shirt-in-beige-with-collegiate-front-back-puff-print/202883477-1-smokegrey",
+      "quantity": 1,
+      "size": "L"
+    },
+    {
+      "id": "3",
+      "name": "Dr Marteens",
+      "description": "vegan 1460 8-eye boots in black",
+      "price": 148.00,
+      "imageUrl": "https://images.asos-media.com/products/dr-martens-vegan-1460-8-eye-boots-in-black/9038987-1-black",
+      "quantity": 1,
+      "size": "42"
+    },
+    {
+      "id": "4",
+      "name": "Vans Old Skool",
+      "description": "Gumsole trainers in black/white",
+      "price": 75.90,
+      "imageUrl": "https://images.asos-media.com/products/vans-old-skool-gumsole-trainers-in-black-white/202637694-1-black",
+      "quantity": 1,
+      "size": "42.5"
+    },
+    {
+      "id": "5",
+      "name": "Vans Old Skool",
+      "description": "Trainers in blue",
+      "price": 81.60,
+      "imageUrl": "https://images.asos-media.com/products/vans-old-skool-trainers-in-blue/13222824-1-blue",
+      "quantity": 1,
+      "size": "42.5"
+    }
+  ],
+  "categoryList": [
+    {
+      "name": "DESIGN JEWELS",
+      "caption": "E-boy energy",
+      "src": "../../../../../assets/images/category/jewels_category.avif"
+    },
+    {
+      "name": "SHOES",
+      "caption": "Sneaky peaks",
+      "src": "../../../../assets/images/category/shoes_category.avif"
+    },
+    {
+      "name": "SKATE PRINTS",
+      "caption": "Punk Perfection by ASOS Design",
+      "src": "../../../../assets/images/category/skate_prints.avif"
+    },
+    {
+      "name": "HIIT",
+      "caption": "Ready, sweat, go!",
+      "src": "../../../../assets/images/category/hit_category.avif"
+    }
+  ],
+  "brandList": [
+    {
+      "brandName": "TOPMAN",
+      "caption": "Top-tier threads",
+      "src": "../../../../assets/images/category/topman_brand.avif"
+    }
+  ],
+  "circularList": [
+    {
+      "title": "THE CIRCULAR DESIGN COLLECTION",
+      "src": "../../../../assets/images/category/asos_design.avif"
+    }
+  ],
+  "categoryListWomen": [
+    {
+      "name": "WEEKEND COLLECTIVE",
+      "caption": "Sunday energy intensifies",
+      "src": "https://content.asos-media.com/-/media/homepages/ww/2022/june/06/moments/119158763_model_1-(1).jpg"
+    },
+    {
+      "name": "GLAM CO-ORDS",
+      "caption": "Twin Flames",
+      "src": "https://content.asos-media.com/-/media/homepages/ww/2022/june/06/moments/ww_glam_coords_moment_870x1110.jpg"
+    },
+    {
+      "name": "TOPSHOP",
+      "caption": "You want to be on Top(shop)?",
+      "src": "https://images.asos-media.com/products/topshop-plastic-round-sunglasses-in-tort/201564524-1-brown?$n_640w$&wid=634&fit=constrain"
+    },
+    {
+      "name": "VITA LIBERATA",
+      "caption": "Your bronzed bod awaits",
+      "src": "https://content.asos-media.com/-/media/homepages/ww/2022/may/23-gbl/moments/wwfbvitaliberataeurowmoment870x1110.jpg"
+    }
+  ],
+  "brandListWomen": [
+    {
+      "brandName": "NEW EDITION",
+      "caption": "Material girl",
+      "src": "https://content.asos-media.com/-/media/homepages/ww/2022/june/06/moments/ww_asos_edition_moment_870x1110_v3.jpg"
+    },
+    {
+      "brandName": "SUMMER ROMANCE",
+      "caption": "Ruffle some feathers",
+      "src": "https://content.asos-media.com/-/media/homepages/ww/2022/june/06/moments/ww_summer_romance_moment_870x1110.jpg"
+    }
+  ],
+  "shopList": [
+    {
+      "id": "1",
+      "name": "NEW DESIGN",
+      "description": "oversized t-shirt with Rolling Stones print in white",
+      "price": 32.45,
+      "imageUrl": "https://images.asos-media.com/products/asos-design-oversized-t-shirt-with-rolling-stones-print-in-white/202722155-1-white",
+      "favorite": false
+    },
+    {
+      "id": "2",
+      "name": "NEW DESIGN",
+      "description": "oversized t-shirt in beige with collegiate front & back puff print",
+      "price": 24.99,
+      "imageUrl": "https://images.asos-media.com/products/asos-design-oversized-t-shirt-in-beige-with-collegiate-front-back-puff-print/202883477-1-smokegrey",
+      "favorite": false
+    },
+    {
+      "id": "3",
+      "name": "Dr Marteens",
+      "description": "vegan 1460 8-eye boots in black",
+      "price": 148.00,
+      "imageUrl": "https://images.asos-media.com/products/dr-martens-vegan-1460-8-eye-boots-in-black/9038987-1-black",
+      "favorite": true
+    },
+    {
+      "id": "4",
+      "name": "Vans Old Skool",
+      "description": "Gumsole trainers in black/white",
+      "price": 75.90,
+      "imageUrl": "https://images.asos-media.com/products/vans-old-skool-gumsole-trainers-in-black-white/202637694-1-black",
+      "favorite": false
+    },
+    {
+      "id": "5",
+      "name": "Vans Old Skool",
+      "description": "Trainers in blue",
+      "price": 81.60,
+      "imageUrl": "https://images.asos-media.com/products/vans-old-skool-trainers-in-blue/13222824-1-blue",
+      "favorite": false
+    },
+    {
+      "id": "6",
+      "name": "Reebok",
+      "description": "Workout Plus trainers in green",
+      "price": 65.60,
+      "imageUrl": "https://images.asos-media.com/products/reebok-workout-plus-trainers-in-khaki-green/24490717-1-green?$n_960w$&wid=952&fit=constrain",
+      "favorite": false
+    },
+    {
+      "id": "7",
+      "name": "Original Penguin",
+      "description": "T-shirt in blue",
+      "price": 23.00,
+      "imageUrl": "https://images.asos-media.com/products/orignal-penguin-t-shirt-in-blue/202964657-1-blue?$n_640w$&wid=634&fit=constrain",
+      "favorite": false
+    },
+    {
+      "id": "8",
+      "name": "Ray-Ban",
+      "description": "Clubmaster sunglasses in black",
+      "price": 149.90,
+      "imageUrl": "https://images.asos-media.com/products/ray-ban-0rb4190-clubmaster-sunglasses-in-black/202164559-1-black?$n_640w$&wid=634&fit=constrain",
+      "favorite": false
+    },
+    {
+      "id": "9",
+      "name": "Replay",
+      "description": "Cap with print in white",
+      "price": 31.60,
+      "imageUrl": "https://images.asos-media.com/products/replay-cap-with-print-in-white/202033284-1-white?$n_640w$&wid=634&fit=constrain",
+      "favorite": false
+    },
+    {
+      "id": "10",
+      "name": "Vans",
+      "description": "Vans still burning back print",
+      "price": 20.20,
+      "imageUrl": "https://images.asos-media.com/products/vans-still-burning-back-print-t-shirt-in-black/202182243-1-black?$n_640w$&wid=634&fit=constrain",
+      "favorite": false
+    },
+    {
+      "id": "11",
+      "name": "Vans",
+      "description": "Original checkerboard back print",
+      "price": 24.30,
+      "imageUrl": "https://images.asos-media.com/products/vans-original-checkerboard-back-print-t-shirt-in-white/202181376-1-white?$n_640w$&wid=634&fit=constrain",
+      "favorite": true
+    },
+    {
+      "id": "12",
+      "name": "adidas Originals",
+      "description": "United hoodie in black",
+      "price": 36.89,
+      "imageUrl": "https://images.asos-media.com/products/adidas-originals-united-hoodie-in-black-with-globe-graphics/201388767-1-black?$n_640w$&wid=634&fit=constrain",
+      "favorite": false
+    },
+    {
+      "id": "13",
+      "name": "Vans",
+      "description": "Easy trinity hoodie in black",
+      "price": 28.74,
+      "imageUrl": "https://images.asos-media.com/products/vans-easy-trinity-hoodie-in-black/202137258-1-black?$n_640w$&wid=634&fit=constrain",
+      "favorite": false
+    },
+    {
+      "id": "14",
+      "name": "Napapijiri",
+      "description": "Voyage backpack in black",
+      "price": 30.20,
+      "imageUrl": "https://images.asos-media.com/products/napapijri-voyage-3-backpack-in-black/201437306-1-black?$n_640w$&wid=634&fit=constrain",
+      "favorite": false
+    },
+    {
+      "id": "15",
+      "name": "Dr Marteens",
+      "description": "Gryphon quad leather chunky sandals",
+      "price": 124.00,
+      "imageUrl": "https://images.asos-media.com/products/dr-martens-gryphon-quad-leather-chunky-sandals-with-gold-hardware-in-black/13258009-1-black?$n_640w$&wid=634&fit=constrain",
+      "favorite": true
+    }
+  ]
+}

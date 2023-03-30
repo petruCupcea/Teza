@@ -50,7 +50,7 @@ export class MenPageComponent extends BaseComponent implements OnInit {
 
 
   private setCategoryList() {
-    this.http.get('api/categoryList').pipe(takeUntil(this.onDestroy)).subscribe((value: any) => {
+    this.http.get('http://localhost:3000/categoryList').pipe(takeUntil(this.onDestroy)).subscribe((value: any) => {
       this.categoryList = value;
       this.allRequestsDone(true);
     });
@@ -58,7 +58,7 @@ export class MenPageComponent extends BaseComponent implements OnInit {
 
 
   private setBrandList() {
-    this.http.get('api/brandList').pipe(takeUntil(this.onDestroy)).subscribe((value: any) => {
+    this.http.get('http://localhost:3000/brandList').pipe(takeUntil(this.onDestroy)).subscribe((value: any) => {
       this.brandList = value;
       this.allRequestsDone(true);
     });
@@ -66,7 +66,7 @@ export class MenPageComponent extends BaseComponent implements OnInit {
 
 
   private setCircularList() {
-    this.http.get('api/circularList').pipe(takeUntil(this.onDestroy)).subscribe((value: any) => {
+    this.http.get('http://localhost:3000/circularList').pipe(takeUntil(this.onDestroy)).subscribe((value: any) => {
       this.circularList = value;
       this.allRequestsDone(true);
     });

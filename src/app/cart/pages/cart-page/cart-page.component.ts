@@ -64,7 +64,7 @@ export class CartPageComponent extends BaseComponent implements OnInit {
 
   private setCartList() {
     this.requestInProgress = true;
-    this.http.get('api/cartItems').pipe(takeUntil(this.onDestroy)).subscribe((value: any) => {
+    this.http.get('http://localhost:3000/cartItems').pipe(takeUntil(this.onDestroy)).subscribe((value: any) => {
       this.cartList = value;
       this.requestInProgress = false;
       this.setSubTotal();

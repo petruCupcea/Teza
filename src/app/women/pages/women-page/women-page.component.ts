@@ -48,7 +48,7 @@ export class WomenPageComponent extends BaseComponent implements OnInit {
 
 
   private setCategoryList() {
-    this.http.get('api/categoryListWomen').pipe(takeUntil(this.onDestroy)).subscribe((value: any) => {
+    this.http.get('http://localhost:3000/categoryListWomen').pipe(takeUntil(this.onDestroy)).subscribe((value: any) => {
       this.categoryList = value;
       this.allRequestsDone(true);
     });
@@ -56,7 +56,7 @@ export class WomenPageComponent extends BaseComponent implements OnInit {
 
 
   private setBrandList() {
-    this.http.get('api/brandListWomen').pipe(takeUntil(this.onDestroy)).subscribe((value: any) => {
+    this.http.get('http://localhost:3000/brandListWomen').pipe(takeUntil(this.onDestroy)).subscribe((value: any) => {
       this.brandList = value;
       this.allRequestsDone(true);
     });

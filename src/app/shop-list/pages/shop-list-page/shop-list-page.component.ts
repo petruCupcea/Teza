@@ -59,7 +59,7 @@ export class ShopListPageComponent extends BaseComponent {
 
   private setProductList() {
     this.requestInProgress = true;
-    this.http.get('api/shopList').pipe(takeUntil(this.onDestroy)).subscribe((value: any) => {
+    this.http.get('http://localhost:3000/shopList').pipe(takeUntil(this.onDestroy)).subscribe((value: any) => {
       this.productList = value;
       this.requestInProgress = false;
     });
